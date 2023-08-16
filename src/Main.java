@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         checkYear(2021);
-        os(0,2015);
-        delivery(95);
+        setOS(0,2015);
+        deliver(95);
     }
     public static void checkYear(int year) {
 
@@ -14,7 +14,7 @@ public class Main {
         }
 
         }
-        public static void os(int clientOS, int clientDeviceYear ){
+        public static void setOS(int clientOS, int clientDeviceYear ){
             System.out.println("Задание номер 2");
             if (clientOS==1 && clientDeviceYear<=2015){
                 System.out.println("Установите версию приложения для iOS по ссылке");
@@ -31,8 +31,8 @@ public class Main {
 
             }
         }
-        public static int delivery(int deliveryDistance){
-            System.out.println("Задание номер 4");
+        public static int deliver(int deliveryDistance){
+            System.out.println("Задание номер 3");
             int day=1;
             if (deliveryDistance<20){
                 System.out.println("Потребуется дней: "+ day);
