@@ -6,7 +6,7 @@ public class Main {
     }
     public static void checkYear(int year) {
 
-        System.out.println("Задание номер 1");
+        System.out.println("Задание номер 1.");
         if (year % 4 == 0 && year % 400 == 0 || year % 100 != 0) {
             System.out.println(year + " год является високосным");
         } else {
