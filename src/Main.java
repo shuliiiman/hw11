@@ -33,23 +33,22 @@ public class Main {
         }
         public static int deliver(int deliveryDistance){
             System.out.println("Задание номер 3");
-            int day=1;
+            int day=0;
             if (deliveryDistance<20){
+                day=+1;
                 System.out.println("Потребуется дней: "+ day);
-                return day;
             }
             else if(deliveryDistance >=20 && deliveryDistance<60){
-                System.out.println("Потребуется дней: "+ (day+1));
-                return day;
-
+                day=+2;
+                System.out.println("Потребуется дней: "+ (day));
             }
             else if(deliveryDistance >=60 && deliveryDistance<100){
-                System.out.println("Потребуется дней: "+ (day+2));
-                return day;
+                day+=3;
+                System.out.println("Потребуется дней: "+ (day));
             }
             else{
                 System.out.println("Доставки нет");
-                return day;
             }
+            return day;
         }
     }
